@@ -3,13 +3,15 @@
 </script>
 
 <template>
+
   <header>
+
     <div class="sidenav">
       <div class="nav">
         <ul>
           <li>
             <a href="#">
-              <span class="icon"></span>
+              <span class="icon"> <ion-icon name="home-outline"></ion-icon> </span>
               <span class="text">Home</span>
             </a>
           </li>
@@ -41,15 +43,21 @@
       </div>
     </div>
   </header>
+
+
+
 </template>
+
 <style>
+
 header {
   margin-bottom: 60px;
 }
 
 body {
-  background-color: black;
+  background-color:black;
 }
+
 .sidenav {
   width: 1600px;
   height: 150px;
@@ -64,4 +72,11 @@ body {
   background-color: #341933;
   border-radius: 40px;
 }
+
+@media screen and (max-width: 768px); {
+  section, aside {
+    width: 100px;
+  }
+}
+  
 </style>
