@@ -1,61 +1,64 @@
 <script>
-
+const list = document.querySelectorAll(".list");
+function activelink() {
+  list.forEach((item) => item.classList.remove("active"));
+  this.classList.add("active");
+}
+list.forEach((item) => item.addEventListener("click", activelink));
 </script>
 
 <template>
-
   <header>
-
     <div class="sidenav">
       <div class="nav">
         <ul>
-          <li>
+          <li class="list active">
             <a href="#">
-              <span class="icon"> <ion-icon name="home-outline"></ion-icon> </span>
+              <span class="icon"></span>
               <span class="text">Home</span>
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="#">
               <span class="icon"></span>
               <span class="text">Perfil</span>
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="#">
               <span class="icon"></span>
               <span class="text">Mensagens</span>
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="#">
-              <span class="icon"><ios-add-circle-icon /> </span>
+              <span class="icon"></span>
               <span class="text">Categorias</span>
             </a>
           </li>
-          <li>
+          <li class="list">
             <a href="#">
-              <span class="icon"> /></span>
+              <span class="icon"></span>
               <span class="text">Config</span>
             </a>
           </li>
+          <div class="indicator"></div>
         </ul>
       </div>
     </div>
   </header>
-
-
-
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 header {
   margin-bottom: 60px;
 }
 
 body {
-  background-color:black;
+  background-color: black;
+  display: flex;
 }
 
 .sidenav {
@@ -72,11 +75,95 @@ body {
   background-color: #341933;
   border-radius: 40px;
 }
-
-@media screen and (max-width: 768px); {
-  section, aside {
-    width: 100px;
-  }
+.nav {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
-  
+
+.nav ul {
+  display: flex;
+  width: 350px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 65px;
+  font-size: 1.5em;
+  transition: 0.5s;
+  color: #341933;
+}
+
+.nav ul li.active a .icon {
+  transform: translateY(-32);
+  color: #341933;
+}
+
+.nav ul li a .text {
+  position: absolute;
+  background-color: #ad47ac;
+  color: #341933;
+  border-radius: 2px 7px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+.nav ul li.active a .text {
+  transform: translateY(-4px);
+  opacity: 1;
+}
+
+.indicator {
+  position: absolute;
+  top: -35%;
+  width: 70px;
+  height: 70px;
+  background-color: #ad47ac;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -28px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 15px 18px #ad47ac;
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -28px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: -15px 18px #ad47ac;
+}
 </style>
