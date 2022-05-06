@@ -1,12 +1,12 @@
 <script>
-    import ScreenMain from "@/components/ScreenMain.vue";
-    export default {
-        components: { ScreenMain, },
-    };
+import ScreenMain from "@/components/ScreenMain.vue";
+export default {
+  components: { ScreenMain },
+};
 </script>
 
 <template>
-    <ScreenMain />
+  <ScreenMain />
 </template>
 
 <style></style>
