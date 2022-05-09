@@ -14,31 +14,33 @@ list.forEach((item) => item.addEventListener("click", activelink));
       <ul>
         <li class="list active">
           <a href="#">
-            <span class="icon"></span>
+            <span class="icon">
+              <img src="../assets/image/home.svg" height="25px" width="25px" /></span>
             <span class="text">Home</span>
           </a>
         </li>
-        <li class="list">
+        <li class="list active">
           <a href="#">
-            <span class="icon"></span>
+            <span class="icon">
+              <img src="../assets/image/person.svg" height="25px" width="25px" /></span>
             <span class="text">Perfil</span>
           </a>
         </li>
-        <li class="list">
+        <li class="list active">
           <a href="#">
-            <span class="icon"></span>
+            <span class="icon"><img src="../assets/image/chatbubble.svg" height="25px" width="25px" /></span>
             <span class="text">Mensagens</span>
           </a>
         </li>
-        <li class="list">
+        <li class="list active">
           <a href="#">
-            <span class="icon"></span>
+            <span class="icon"><img src="../assets/image/layers.svg" height="25px" width="25px" /></span>
             <span class="text">Categorias</span>
           </a>
         </li>
-        <li class="list">
+        <li class="list active">
           <a href="#">
-            <span class="icon"></span>
+            <span class="icon"><img src="../assets/image/settings.svg" height="25px" width="25px" /></span>
             <span class="text">Config</span>
           </a>
         </li>
@@ -50,7 +52,7 @@ list.forEach((item) => item.addEventListener("click", activelink));
     <div class="login-header">Login</div>
 
     <!-- <div class="sidenav">
-      <div class="sas">
+      <div class="sas">-
         <ul>
           <li class="list active">
             <a href="#">
@@ -87,6 +89,27 @@ list.forEach((item) => item.addEventListener("click", activelink));
       </div>
     </div> -->
   </header>
+
+  <div class="flex justify-center">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm">
+      <a href="#!">
+        <img class="rounded-t-lg" src="" alt="" />
+      </a>
+      <div class="p-6">
+        <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+        <p class="text-gray-700 text-base mb-4">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <button
+          type="button"
+          class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+        >
+          Button
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style>
@@ -101,20 +124,21 @@ body {
 
 header {
   margin-bottom: 60px;
-  width: 99%;
-  left: 99%;
 }
 
 .header {
-  border: 2px solid #ad47ac;
+  border: 1px sod #ad47ac;
   box-shadow: 3px 3px 3px 1px #ad47ac;
+  height: 75px;
   background-color: #341933;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   margin-top: 30px;
-
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 12px;
+  color: white;
 }
 
 .nav-header {
@@ -122,6 +146,7 @@ header {
   align-items: center;
   border-radius: 10px;
   width: 50%;
+  z-index: 2;
 }
 
 .nav-header ul {
@@ -138,28 +163,7 @@ header {
   font-weight: 500;
 }
 
-.sidenav {
-  width: 1520px;
-  height: 150px;
-  padding: 10px;
-  border: 2px solid #ad47ac;
-  box-shadow: 3px 3px 3px 1px #ad47ac;
-  margin: 0px;
-  position: relative;
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-right: auto;
-  background-color: #341933;
-  border-radius: 40px;
-}
-.sas {
-  /* position: relative; */
-  width: 400px;
-  height: 60px;
-  z-index: 2;
-}
-
-.sas ul li a .icon {
+.nav-header ul li a .icon {
   position: relative;
   display: block;
   line-height: 65px;
@@ -168,15 +172,15 @@ header {
   color: #341933;
 }
 
-.sas ul li.active a .icon {
+.nav-header ul li.active a .icon {
   transform: translateY(-32);
   color: #341933;
 }
 
-.sas ul li a .text {
+.nav-header ul li a .text {
   position: absolute;
-  background-color: #ad47ac;
-  color: #341933;
+  background-color: white;
+  color: #ad47ac;
   border-radius: 2px 7px;
   border-radius: 12px;
   font-weight: 400;
@@ -187,7 +191,7 @@ header {
   opacity: 0;
 }
 
-.sas ul li.active a .text {
+.nav-header ul li.active a .text {
   transform: translateY(-4px);
   opacity: 1;
 }
