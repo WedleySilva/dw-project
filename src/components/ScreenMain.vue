@@ -56,7 +56,9 @@
     </div>
 
     <div class="pesquisa-header">Pesquisa</div>
-    <div class="login-header">Login</div>
+    <div class="login-header">
+      <a href="#">Login</a>
+    </div>
   </header>
 </template>
 
@@ -68,7 +70,13 @@ body {
   margin: 0;
   color: white;
   width: 100%;
+  text-transform: uppercase;
 }
+
+a {
+  text-decoration: none;
+}
+
 
 header {
   margin-bottom: 60px;
@@ -78,7 +86,7 @@ header {
   border: 1px sod #ad47ac;
   box-shadow: 3px 3px 3px 1px #ad47ac;
   height: 125px;
-  background-color: #341933;
+  background: linear-gradient(90deg,#993399,#341933);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +122,7 @@ header {
   position: relative;
   display: block;
   line-height: 40px;
-  color: #341933;
+
 }
 
 .nav-header ul li a .text {
@@ -122,11 +130,25 @@ header {
 }
 
 .box {
-  background-color: #ad47ac;
-  box-shadow: 3px 3px 3px 1px white;
+ 
+  position: relative;
+  overflow: hidden;
 }
 
-a{
+.login-header {
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: white;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  background: linear-gradient(90deg,#755bea,#ff72c0);
+  overflow: hidden;
 }
+
+
 </style>
