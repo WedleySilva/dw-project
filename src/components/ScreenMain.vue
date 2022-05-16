@@ -1,5 +1,4 @@
-<script>
-</script>
+<script></script>
 
 <template>
   <header class="header">
@@ -19,7 +18,7 @@
             <span class="icon">
               <img src="../assets/image/person.svg" height="25px" width="25px"
             /></span>
-            <span class="text">Perfil</span>
+            <span class="text perfil">Perfil</span>
           </a>
         </li>
         <li class="list">
@@ -55,11 +54,22 @@
       </ul>
     </div>
 
-    <div class="pesquisa-header">Pesquisa</div>
+    <div class="search-box">
+      <input type="text" class="search-txt" placeholder="Pesquisar" />
+      <a href="#" class="search-btn"
+        ><i class="fas fa-search"
+          ><img
+            src="../assets/image/settings.svg"
+            height="25px"
+            width="25px" /></i
+        ></a>
+    </div>
     <div class="login-header">
       <a href="#">Login</a>
     </div>
   </header>
+
+  <article><h1>Article</h1></article>
 </template>
 
 <style>
@@ -71,12 +81,12 @@ body {
   color: white;
   width: 100%;
   text-transform: uppercase;
+  font-family: "Yeseva One";
 }
 
 a {
   text-decoration: none;
 }
-
 
 header {
   margin-bottom: 60px;
@@ -86,7 +96,7 @@ header {
   border: 1px sod #ad47ac;
   box-shadow: 3px 3px 3px 1px #ad47ac;
   height: 125px;
-  background: linear-gradient(90deg,#993399,#341933);
+  background: linear-gradient(90deg, #993399, #341933);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,6 +118,11 @@ header {
   display: flex;
 }
 
+.list:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: #993399 0px 0px 0px;
+}
+
 .nav-header li {
   list-style-type: none;
   position: relative;
@@ -122,7 +137,6 @@ header {
   position: relative;
   display: block;
   line-height: 40px;
-
 }
 
 .nav-header ul li a .text {
@@ -130,7 +144,6 @@ header {
 }
 
 .box {
- 
   position: relative;
   overflow: hidden;
 }
@@ -139,16 +152,73 @@ header {
   position: relative;
   display: inline-block;
   padding: 12px 36px;
-  margin: 10px 0;
+  margin: 12px 0;
+  margin-right: 12px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 2px;
   border-radius: 40px;
-  background: linear-gradient(90deg,#755bea,#ff72c0);
+  background: linear-gradient(90deg, #755bea, #ff72c0);
   overflow: hidden;
+  transition: transform 200ms, box shadow 200ms;
 }
 
+button {
+  transition: transform 200ms, box shadow 200ms;
+}
 
+.login-header:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: #993399 0px 0px 0px;
+}
+
+.search-box {
+  position: absolute;
+  left: 82%;
+  bottom: 84%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, #755bea, #ff72c0);
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-btn {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ad47ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  float: left;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0px;
+}
+
+.search-box:hover > .search-btn {
+  background:#755bea;
+}
+.search-txt::placeholder{
+  color: #341933;
+}
 </style>
