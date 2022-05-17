@@ -53,16 +53,15 @@
         </li>
       </ul>
     </div>
-
     <div class="search-box">
       <input type="text" class="search-txt" placeholder="Pesquisar" />
       <a href="#" class="search-btn"
         ><i class="fas fa-search"
           ><img
-            src="../assets/image/settings.svg"
+            src="../assets/image/search.png"
             height="25px"
             width="25px" /></i
-        ></a>
+      ></a>
     </div>
     <div class="login-header">
       <a href="#">Login</a>
@@ -131,6 +130,7 @@ header {
   width: 100%;
   text-align: center;
   font-weight: 500;
+  transition: color 200ms;
 }
 
 .nav-header ul li a .icon {
@@ -175,10 +175,9 @@ button {
 }
 
 .search-box {
-  position: absolute;
-  left: 82%;
-  bottom: 84%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  top: 25%;
+  transform: translate(-30%, -50%);
   background: linear-gradient(90deg, #755bea, #ff72c0);
   height: 40px;
   border-radius: 40px;
@@ -207,7 +206,6 @@ button {
   transition: 0.4s;
   line-height: 40px;
   width: 0px;
-  
 }
 
 .search-box:hover > .search-txt {
@@ -216,9 +214,9 @@ button {
 }
 
 .search-box:hover > .search-btn {
-  background:#755bea;
+  background: #755bea;
 }
-.search-txt::placeholder{
+.search-txt::placeholder {
   color: #341933;
 }
 </style>
