@@ -68,7 +68,11 @@
     </div>
   </header>
 
-  <article><h1>Article</h1></article>
+  <article>
+    
+      conteudo
+    
+  </article>
 </template>
 
 <style>
@@ -219,4 +223,9 @@ button {
 .search-txt::placeholder {
   color: #341933;
 }
+
+article {
+  margin-bottom: 60px;
+}
+
 </style>
