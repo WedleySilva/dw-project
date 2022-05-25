@@ -62,7 +62,7 @@
       ></a>
     </div>
     <div class="login-header">
-      <a href="#">Login</a>
+      <a href="/login">Login</a>
     </div>
   </header>
 </template>

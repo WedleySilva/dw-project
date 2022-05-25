@@ -23,6 +23,16 @@ const router = createRouter({
       name: "mensagens",
       component: () => import("../views/BlocoMensagens.vue"),
     },
+    {
+      path: "/config",
+      name: "config",
+      component: () => import("../views/BlocoConfig.vue"),
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: () => import("../views/TelaLogin.vue"),
+    },
   ],
 });
 

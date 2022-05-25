@@ -1,12 +1,11 @@
-<script>
-import ScreenMain from "@/components/ScreenMain.vue";
-export default {
-  components: { ScreenMain },
-};
+<script setup>
+import BlocoHeader from "@/components/BlocoHeader.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <ScreenMain />
+  <BlocoHeader />
+  <RouterView />
 </template>
 
 <style></style>
