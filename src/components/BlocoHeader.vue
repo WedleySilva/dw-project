@@ -4,7 +4,7 @@
     <div class="nav-header box">
       <ul>
         <li class="list">
-          <a href="#">
+          <a href="/">
             <span class="icon">
               <img src="../assets/image/home.svg" height="25px" width="25px"
             /></span>
@@ -12,7 +12,7 @@
           </a>
         </li>
         <li class="list">
-          <a href="#">
+          <a href="/perfil">
             <span class="icon">
               <img src="../assets/image/person.svg" height="25px" width="25px"
             /></span>
@@ -20,7 +20,7 @@
           </a>
         </li>
         <li class="list">
-          <a href="#">
+          <a href="/mensagens">
             <span class="icon"
               ><img
                 src="../assets/image/chatbubble.svg"
@@ -31,7 +31,7 @@
           </a>
         </li>
         <li class="list">
-          <a href="#">
+          <a href="/categorias">
             <span class="icon"
               ><img src="../assets/image/layers.svg" height="25px" width="25px"
             /></span>
@@ -39,7 +39,7 @@
           </a>
         </li>
         <li class="list">
-          <a href="#">
+          <a href="config">
             <span class="icon">
               <img
                 src="../assets/image/settings.svg"
