@@ -11,7 +11,8 @@
     "global": "^4.4.0",
     "surge": "^0.23.1",
     "vue": "^3.2.33",
-    "vue-ionicons": "^3.0.5"
+    "vue-ionicons": "^3.0.5",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",

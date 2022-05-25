@@ -69,17 +69,12 @@
   </header>
 
   <article class="article">
-    
     <div class="container">
       <div class="card">
-        <div class="img">
-          IMAGEM DO JOGO
-        </div>
+        <div class="img"><img src="" alt="" /></div>
         <h1 class="tittle">RPG</h1>
         <div class="content">
-          <p class="conteudo">
-            CONTEUDO DO JOGOS
-          </p>
+          <p class="conteudo">CONTEUDO DO JOGOS</p>
           <a class="button" href="#">Veja mais</a>
         </div>
       </div>
@@ -87,14 +82,10 @@
 
     <div class="container">
       <div class="card">
-        <div class="img">
-          IMAGEM DO JOGO
-        </div>
+        <div class="img">IMAGEM DO JOGO</div>
         <h1 class="tittle">Moba</h1>
         <div class="content">
-          <p class="conteudo">
-            CONTEUDO DO JOGOS
-          </p>
+          <p class="conteudo">CONTEUDO DO JOGOS</p>
           <a class="button" href="#">Veja mais</a>
         </div>
       </div>
@@ -102,20 +93,15 @@
 
     <div class="container">
       <div class="card">
-        <div class="img">
-          IMAGEM DO JOGO
-        </div>
+        <div class="img">IMAGEM DO JOGO</div>
         <h1 class="tittle">Fps</h1>
         <div class="content">
-          <p class="conteudo">
-            CONTEUDO DO JOGOS
-          </p>
+          <p class="conteudo">CONTEUDO DO JOGOS</p>
           <a class="button" href="#">Veja mais</a>
         </div>
       </div>
     </div>
   </article>
-
 </template>
 
 <style>
@@ -242,6 +228,7 @@ button {
   align-items: center;
   transition: 2s;
 }
+
 .search-txt {
   border: none;
   background: none;
@@ -263,6 +250,7 @@ button {
 .search-box:hover > .search-btn {
   background: #755bea;
 }
+
 .search-txt::placeholder {
   color: #341933;
 }
@@ -289,7 +277,7 @@ button {
   width: 300px;
   background: linear-gradient(90deg, #993399, #341933);
   margin: 20px;
-  border: 1 solid  #993399;
+  border: 1 solid #993399;
   border-radius: 20px;
   overflow: hidden;
   transition: 0.5s;
@@ -326,7 +314,8 @@ button {
   outline: none;
   margin-top: 20px;
 }
-.container .card:hover{
+
+.container .card:hover {
   background: linear-gradient(90deg, #341933, #993399);
   color: #fff;
   margin-top: -30px;
