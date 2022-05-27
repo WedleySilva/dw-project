@@ -33,6 +33,11 @@ const router = createRouter({
       name: "login",
       component: () => import("../views/TelaLogin.vue"),
     },
+    {
+      path: "/caminho",
+      name: "caminho",
+      component: () => import("../views/BlocoCaminho.vue"),
+    },
   ],
 });
 
